@@ -44,5 +44,3 @@ mydequeue.removeRear()
 mydequeue.size()
 mydequeue.removeFront()
 mydequeue.removeRear()
-
-# Example of a Linked List in Python.
