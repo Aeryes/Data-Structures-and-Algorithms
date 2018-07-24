@@ -6,41 +6,41 @@ class DeQueue():
         self.items = []
         
     def __len__(self):
-        if self.items == []:
+        if not self.items:
             print("The dequeue is empty.")
         else:
             return len(self.items))
         
-    def isEmpty(self):
+    def is_empty(self):
         print(self.items == [])
         
-    def addRear(self, item):
+    def add_rear(self, item):
         self.items.append(item)
-        print(str(item) + " has been added to the rear.")
+        print(f"{item} + added to the rear.")
         
-    def addFront(self, item):
+    def add_front(self, item):
         self.items.insert(0, item)
-        print(str(item) + " has een added to the front.")
+        print(f"{item} + has een added to the front.")
 
-    def removeRear(self):
+    def remove_rear(self):
         if self.items == []:
             print("The dequeue is empty.")
         else:
-            print(str(self.items.pop()) + " has been removed from the rear.")
+            print(f"{self.items.pop()} + has been removed from the rear.")
         
-    def removeFront(self):
+    def remove_front(self):
         if self.items == []:
             print("The dequeue is empty.")
         else:
-            print(str(self.items.pop(0)) + " has been removed from the front.")
+            print(f"(self.items.pop(0)} + has been removed from the front.")
 
 # In order to use this data structure simply create a class instance and use the method calls
 # like seen in the sample code below.
 mydequeue = DeQueue()
-mydequeue.addRear(6)
-mydequeue.addFront(2)
-mydequeue.isEmpty()
-mydequeue.removeRear()
-mydequeue.size()
-mydequeue.removeFront()
-mydequeue.removeRear()
+mydequeue.add_rear(6)
+mydequeue.add_front(2)
+mydequeue.is_empty()
+mydequeue.remove_rear()
+len(mydequeue)
+mydequeue.remove_front()
+mydequeue.remove_rear()
