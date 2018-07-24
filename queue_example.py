@@ -7,7 +7,10 @@
 class Queue():
     def __init__(self):
         self.items = []
-        
+    
+    def __len__(self):
+        return len(self.items)
+    
     def isEmpty(self):
         print(self.items == [])
         
@@ -20,9 +23,6 @@ class Queue():
         else:
             self.removed = self.items.pop()
             print(str(self.removed) + " has been removed from the Queue.")
-        
-    def size(self):
-        print(len(self.items))
 
 # To use the queue simply create a Queue instance and use the method calls as seen in 
 # the example below.
