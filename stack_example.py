@@ -6,6 +6,9 @@
 class Stack():
     def __init__(self):
         self.items = []
+        
+    def __len__(self):
+        return len(self.items)
     
     def isEmpty(self):
         print(self.items == [])
@@ -25,16 +28,13 @@ class Stack():
             print("Cannot remove items from empty list.")
         else:
             return self.items.pop()
-        
-    def size(self):
-        print(len(self.items))
 
 # To create a stack simply make an instance of the class and use
 # the method calls as required. An example is shown below.
 
 mystack = Stack()
 mystack.peek()
-mystack.size()
+print(len(mystack))
 mystack.isEmpty()
 mystack.pop()
 mystack.push(15)
