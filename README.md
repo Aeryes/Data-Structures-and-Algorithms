@@ -1,5 +1,6 @@
 # Data-Structures and Algorithms
 This project shows examples of commonly seen data structures and algorithms in the Python programming language. The aim of this repo is to provide people who are learning the Python programming language an easy to use reference for the most common data structures that can be seen.
+
 Currently the data structures that are present in this repo are as follows:
 - Stack
 - Queue
