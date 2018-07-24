@@ -10,18 +10,18 @@ class Stack():
     def __len__(self):
         return len(self.items)
     
-    def isEmpty(self):
+    def is_empty(self):
         print(self.items == [])
         
     def push(self, item):
         self.items.append(item)
-        print("Item " + str(item) + " added to the Stack")
+        print("Item " + f"{item} +  added to the Stack")
         
     def peek(self):
-        if self.items == []:
+        if not self.items:
             print("Empty Stack")
         else:
-            print(self.items[len(self.items)-1])
+            print(self.items[-1])
         
     def pop(self):
         if self.items == []:
@@ -35,6 +35,6 @@ class Stack():
 mystack = Stack()
 mystack.peek()
 print(len(mystack))
-mystack.isEmpty()
+mystack.is_empty()
 mystack.pop()
 mystack.push(15)
