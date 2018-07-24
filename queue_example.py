@@ -11,23 +11,23 @@ class Queue():
     def __len__(self):
         return len(self.items)
     
-    def isEmpty(self):
+    def is_empty(self):
         print(self.items == [])
         
     def enqueue(self, item):
         self.items.insert(0, item)
 
     def dequeue(self):
-        if self.items == []:
+        if not self.items:
             print("The Queue is empty.")
         else:
             self.removed = self.items.pop()
-            print(str(self.removed) + " has been removed from the Queue.")
+            print(f"{self.removed} + has been removed from the Queue.")
 
 # To use the queue simply create a Queue instance and use the method calls as seen in 
 # the example below.
 myqueue = Queue()
-myqueue.size()
+print(len(myqueue))
 myqueue.enqueue('sfsf')
 myqueue.dequeue()
-myqueue.isEmpty()
+myqueue.is_empty()
