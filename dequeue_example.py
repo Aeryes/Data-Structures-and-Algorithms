@@ -32,7 +32,7 @@ class DeQueue():
         if self.items == []:
             print("The dequeue is empty.")
         else:
-            print(f"(self.items.pop(0)} + has been removed from the front.")
+            print(f"{self.items.pop(0)} + has been removed from the front.")
 
 # In order to use this data structure simply create a class instance and use the method calls
 # like seen in the sample code below.
