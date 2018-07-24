@@ -17,4 +17,4 @@ Currently the sorting algorithms that are present in this repo are as follows:
 
 Data structures and algorithms are a very important part of learning a programming langauge. These structures and algorithms allow you to create more robust programs that perform better and consume less memory. By studying these you can take the first steps towards learning more advanced data structures and algorithms.
 
-
+This project uses Python 3.6 in some areas through the use of 'f strings'. If you wish to use earlier versions of python then remove the f strings and replace with a different form of string concatenation.
