@@ -5,6 +5,12 @@ class DeQueue():
     def __init__(self):
         self.items = []
         
+    def __len__(self):
+        if self.items == []:
+            print("The dequeue is empty.")
+        else:
+            return len(self.items))
+        
     def isEmpty(self):
         print(self.items == [])
         
@@ -27,12 +33,6 @@ class DeQueue():
             print("The dequeue is empty.")
         else:
             print(str(self.items.pop(0)) + " has been removed from the front.")
-        
-    def size(self):
-        if self.items == []:
-            print("The dequeue is empty.")
-        else:
-            print(len(self.items))
 
 # In order to use this data structure simply create a class instance and use the method calls
 # like seen in the sample code below.
