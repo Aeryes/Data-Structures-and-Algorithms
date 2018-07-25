@@ -5,6 +5,7 @@ Currently the data structures that are present in this repo are as follows:
 - Stack
 - Queue
 - DeQueue
+- Hashing
 
 Currently the searching algorithms that are present in this repo are as follows:
 - Binary Search
@@ -14,6 +15,10 @@ Currently the sorting algorithms that are present in this repo are as follows:
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
+- Merge Sort
+- Shell Sort
+- Selection Sort
+- Quick Sort
 
 Data structures and algorithms are a very important part of learning a programming langauge. These structures and algorithms allow you to create more robust programs that perform better and consume less memory. By studying these you can take the first steps towards learning more advanced data structures and algorithms.
 
