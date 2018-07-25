@@ -1,6 +1,7 @@
 # Example of a DeQueue in Python. A DeQueue is a versatile data structure which
 # acts as a queue from two ends. This gives the programmer more control over how
-# to set up and add or remove from the dequeue.
+# to set up and add or remove from the dequeue. Python already has a Dequeue implemented
+# through collections.deque
 class DeQueue():
     def __init__(self):
         self.items = []
