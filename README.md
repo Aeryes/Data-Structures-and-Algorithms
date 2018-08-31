@@ -6,6 +6,7 @@ Currently the data structures that are present in this repo are as follows:
 - Queue
 - DeQueue
 - Hashing
+- Singly Linked List
 
 Currently the searching algorithms that are present in this repo are as follows:
 - Binary Search
