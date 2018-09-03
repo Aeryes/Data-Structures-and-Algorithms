@@ -1,3 +1,6 @@
+# Here is a working example of a Doubly Linked List. The main difference between a Singly
+# and Doubly Linked List is traversal through the list. Doubly Linked Lists allow both forward and backward traversal.
+
 class Node:
     """
     A node in a doubly-linked list.
