@@ -15,6 +15,8 @@ Currently the searching algorithms that are present in this repo are as follows:
 
 Currenty the graph searching algorithms that are present in this repo are as follows:
 - Uniform Cost Search
+- Breadth First Search
+- Depth First Search
 
 Currently the sorting algorithms that are present in this repo are as follows:
 - Bubble Sort
