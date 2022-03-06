@@ -1,4 +1,4 @@
-#Breadth First Search - Uses Queue Implementation
+#Depth First Search - Uses Stack Implementation
 #If you want to find the path to a target, one method that offers more control that just
 #defining a predessor node function is to create a Node class.This way you can track the 
 #parent and children nodes using class variables and use this information to perform a simple back trace to find
@@ -6,7 +6,7 @@
 #game such as 8-Puzzle or N-Queens.
 from collections import deque
 
-def bfs(graph, start):
+def dfs(graph, start):
 	#Create the frontier.
 	frontier = deque([start])
 
@@ -15,7 +15,7 @@ def bfs(graph, start):
 
 	while frontier:
 		#Pop and get current node.
-		currentNode = frontier.pop()
+		currentNode = frontier.popleft()
 
 		#Add the current node to the visited nodes list.
 		visitedNodes.append(currentNode)
@@ -23,7 +23,7 @@ def bfs(graph, start):
 		#Get the children of the current node and add them to the frontier.
 		for child in graph[currentNode]:
 			if child not in visitedNodes:
-				frontier.appendleft(child)
+				frontier.insert(0, child)
 
 	return visitedNodes
 
@@ -41,4 +41,4 @@ testGraph = {
 '9':('0'),
 '10':('2')}
 
-print(bfs(testGraph, '0'))
+print(dfs(testGraph, '0'))

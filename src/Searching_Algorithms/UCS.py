@@ -1,4 +1,4 @@
-#Uniform Cost Search - Made by Aeryes
+#Uniform Cost Search - Made by Aeryes - Uses Priority Queue Implementation.
 class GraphNode:
 	def __init__(self):
 		self.children = []
