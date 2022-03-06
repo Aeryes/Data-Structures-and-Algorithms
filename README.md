@@ -13,6 +13,9 @@ Currently the searching algorithms that are present in this repo are as follows:
 - Binary Search
 - Sequential Search
 
+Currenty the graph searching algorithms that are present in thhis repo are as follows:
+- Uniform Cost Search
+
 Currently the sorting algorithms that are present in this repo are as follows:
 - Bubble Sort
 - Selection Sort
