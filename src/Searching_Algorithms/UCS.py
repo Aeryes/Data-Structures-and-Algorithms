@@ -40,14 +40,14 @@ def UCS(start, goal):
 	while frontier:
 		print("Frotier: ")
 		for i in frontier:
-			print("Value: " + str(i.getValue()) + " Cost: " + str(i.getValue()))
+			print(f"Value: {i.getValue()} Cost: {i.getValue()}")
 
 		#pop the next node.
 		current = frontier.pop()
 		#Add the current node to the path.
 		path.append(current)
 
-		print("Popped: " + str(current.getValue()) + " Cost: " + str(current.getValue()))
+		print(f"Popped: {current.getValue()}  Cost:  {current.getValue()}")
 
 		#Check the nodes children and add them to the queue from least cost to highest cost.
 		for child in current.getChildren():
@@ -119,7 +119,7 @@ childFour.addChild(childFive)
 #Run UCS on target.
 result, path = UCS(root, childFive)
 
-print("Goal returned:" + str(result.getValue()))
+print(f"Goal returned: {result.getValue()}")
 
 #Run the backtrace to find the path.
 resultPath = backTrace(path)
@@ -128,4 +128,4 @@ minCost = 0
 for node in resultPath:
 	minCost+=node.getCost()
 
-print("Minimum Cost: " + str(minCost))	
+print(f"Minimum Cost: {minCost}")
