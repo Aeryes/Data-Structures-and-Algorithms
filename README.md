@@ -30,9 +30,9 @@ Sorting Algorithms:
 Machine Learning Algorithms:
 - Markov Decision Process - Value Iteration
 
-#Contribute
+## Contribute
 If you want to contribute to this growing library of data structures and algorithms feel free to submit a pull request and I will review it.
 
 
-#Dependencies
+## Dependencies
 - Python 3.6
